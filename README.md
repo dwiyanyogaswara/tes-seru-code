@@ -1,24 +1,6 @@
 # frontend
 
-## Project setup
-```
-npm install
-```
+Ini frontend untuk repo ini
+https://github.com/dwiyanyogaswara/tes-deptech
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Dipisah karena filenya kebesaran klo digabung dalam 1 repo
