@@ -9,6 +9,3 @@ kemudian
 
 >> "npm run serve"
 3. Silahkan akses ke "http://localhost:3054/"
-
-Cara akses lewat github pages:
-1. Silahkan akses ke "https://dwiyanyogaswara.github.io/tes-seru-demo/" 
