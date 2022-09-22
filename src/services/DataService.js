@@ -4,35 +4,31 @@ import axios from "axios";
 
 
 var url = axios.create({
-    baseURL: "http://localhost:8053"
+    baseURL: "http://dev.farizdotid.com/"
 });
 
   
 
 class DataService {
-    getAll(){
-        return url.get("api/produk/get-produk-all")
+    getAllProvinsi(){
+        return url.get("api/daerahindonesia/provinsi")
     }
 
-    getData(id){
-        return url.post("api/produk/get-produk?id="+id)
+    getProvinsi(id){
+        return url.get("api/daerahindonesia/provinsi/"+id)
     }
 
-    addData(data){
-        return url.post("api/produk/save-produk", data)
+    getKota(id){
+        return url.get("api/daerahindonesia/kota?id_provinsi="+id)
     }
 
-    updateData(data){
-        return url.post("api/produk/update-produk/", data)
+    getKecamatan(id){
+        return url.get("api/daerahindonesia/kecamatan?id_kota="+id)
     }
 
-    delData(id){
-        return url.delete("api/produk/delete-produk?id="+id)
+    getKelurahan(id){
+        return url.get("api/daerahindonesia/kelurahan?id_kecamatan="+id)
     }
-
-    // login(data){
-    //     return url.post("/auth", data)
-    // }
 }
 
 export default new DataService

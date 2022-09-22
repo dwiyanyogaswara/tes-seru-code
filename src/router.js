@@ -2,20 +2,20 @@ import { createWebHistory, createRouter } from "vue-router"
 
 const routes = [
     {
-        path: "/list-produk",
-        name: "listproduk",
-        component: () => import("./views/Produk/List.vue")
+        path: "/form-klaim",
+        name: "formklaim",
+        component: () => import("./views/FormKlaim")
     },
     {
-        path: "/add-produk",
-        name: "addproduk",
-        component: () => import("./views/Produk/Add")
+        path: "/foto-klaim",
+        name: "fotoklaim",
+        component: () => import("./views/FotoKlaim")
     },
     {
-        path: "/edit-produk/:id",
-        name: "editproduk",
-        component: () => import("./views/Produk/Add")
-    }
+        path: "/display-klaim",
+        name: "displayklaim",
+        component: () => import("./views/DisplayKlaim")
+    },
 ]
 
 const router = createRouter({
