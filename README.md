@@ -1,4 +1,4 @@
-# tes-seru.github.io
+# tes-seru-code
 
 Cara akses di local:
 1. Clone project ini
