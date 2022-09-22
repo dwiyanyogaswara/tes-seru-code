@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-sm-1 bg-dark"
-          style="margin-left: -9%; width: 17%"
+          class="col-sm-1"
+          style="margin-left: -9%; width: 17%; background-color: #0043ff"
         ></div>
-        <div class="col-sm-10 bg-dark text-white">
+        <div class="col-sm-10 text-white" style="background-color: #0043ff">
           <div style="margin: 20px">
             <div class="row">
               <div class="col-2">
@@ -19,7 +19,7 @@
                     font-size: 40px;
                     font-weight: 600;
                     position: relative;
-                    /* top: -20px; */
+                    text-align: center;
                   "
                 >
                   Foto Klaim
@@ -28,13 +28,13 @@
               <div class="col-3">
                 <router-link
                   :to="'/display-klaim'"
-                  class="btn btn-outline-success"
+                  class="btn btn-success"
                   style="float: right"
                   ><font-awesome-icon icon="fa-solid fa-circle-arrow-right"
                 /></router-link>
                 <router-link
-                  :to="'/form-klaim'"
-                  class="btn btn-outline-warning"
+                  :to="'/'"
+                  class="btn btn-warning"
                   style="float: right"
                   ><font-awesome-icon icon="fa-solid fa-circle-arrow-left"
                 /></router-link>
@@ -42,7 +42,7 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="progress">
+                <div class="progress" style="margin-top: 10px">
                   <div
                     class="
                       progress-bar progress-bar-striped progress-bar-animated
@@ -51,7 +51,7 @@
                     aria-valuenow="66"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 66%"
+                    style="width: 66%; background-color: #d0a934"
                   ></div>
                 </div>
               </div>
@@ -59,37 +59,46 @@
           </div>
         </div>
         <div
-          class="col-sm-1 bg-dark"
-          style="margin-right: -9%; width: 17%"
+          class="col-sm-1"
+          style="margin-right: -9%; width: 17%; background-color: #0043ff"
         ></div>
       </div>
       <br />
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-5">
-                  <label>No Polisi</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">B 56799 EFG</div>
+          <div
+            style="
+              border: outset;
+              border-width: thick;
+              border-radius: 15px;
+              padding: 10px;
+              background-color: #0043ff;
+              color: #ffffff;
+              font-size: small;
+              font-weight: 600;
+            "
+          >
+            <div class="row">
+              <div class="col-5">
+                <label>No Polisi</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>Nama Tertanggung</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">Fajar Pribadi</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">B 56799 EFG</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>Nama Tertanggung</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>No Polis</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">VCL 0909839849</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">Fajar Pribadi</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>No Polis</label>
               </div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">VCL 0909839849</div>
             </div>
           </div>
         </div>
@@ -99,8 +108,18 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <div class="card">
-            <div class="card-header">Foto Selfie</div>
+          <div class="card" style="border: outset; border-width: thick">
+            <div
+              class="card-header"
+              style="
+                font-size: large;
+                font-weight: 600;
+                background-color: #0043ff;
+                color: #ffffff;
+              "
+            >
+              Foto Selfie
+            </div>
             <div class="card-body">
               <input
                 type="file"
@@ -130,8 +149,18 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <div class="card">
-            <div class="card-header">Foto KTP</div>
+          <div class="card" style="border: outset; border-width: thick">
+            <div
+              class="card-header"
+              style="
+                font-size: large;
+                font-weight: 600;
+                background-color: #0043ff;
+                color: #ffffff;
+              "
+            >
+              Foto KTP
+            </div>
             <div class="card-body">
               <input type="file" @change="onFileChangeKTP" />
               <br />
@@ -157,8 +186,18 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <div class="card">
-            <div class="card-header">Foto Bebas</div>
+          <div class="card" style="border: outset; border-width: thick">
+            <div
+              class="card-header"
+              style="
+                font-size: large;
+                font-weight: 600;
+                background-color: #0043ff;
+                color: #ffffff;
+              "
+            >
+              Foto Bebas
+            </div>
             <div class="card-body">
               <input type="file" @change="onFileChangeBebas" />
               <br />
@@ -180,13 +219,38 @@
         </div>
         <div class="col-1"></div>
       </div>
-      <br>
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-10"><button type="button" class="btn btn-primary" style="float:right" @click="onSubmit">Submit</button></div>
+        <div class="col-10">
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="float: right; margin-top: 15px"
+            @click="onSubmit"
+          >
+            Submit
+          </button>
+        </div>
         <div class="col-1"></div>
       </div>
-      <br>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <router-link
+            :to="'/'"
+            class="btn btn-warning"
+            style="float: left; margin-top: 5px"
+            ><font-awesome-icon icon="fa-solid fa-circle-arrow-left"
+          /></router-link>
+          <router-link
+            :to="'/display-klaim'"
+            class="btn btn-success"
+            style="float: right; margin-top: 5px"
+            ><font-awesome-icon icon="fa-solid fa-circle-arrow-right"
+          /></router-link>
+        </div>
+        <div class="col-1"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -229,52 +293,49 @@ export default {
       this.url_bebas = null;
       localStorage.removeItem("url_bebas");
     },
-    onSubmit(){
-      var collections = []
-      var newdata = 
-        {
-          "id": 0,
-          "firstName" : localStorage.getItem("firstName"),
-          "lastName" : localStorage.getItem("lastName"),
-          "biodata" : localStorage.getItem("biodata"),
-          "provinsi" : localStorage.getItem("provinsi"),
-          "kota" : localStorage.getItem("kota"),
-          "kecamatan" : localStorage.getItem("kecamatan"),
-          "kelurahan" : localStorage.getItem("kelurahan"),
-          "url_selfie" : localStorage.getItem("url_selfie"),
-          "url_ktp" : localStorage.getItem("url_ktp"),
-          "url_bebas" : localStorage.getItem("url_bebas"),
-        }
-      
-        var localcollections = localStorage.getItem("collections")? JSON.parse(localStorage.getItem("collections")): null
-        if(localcollections!=null){
-          console.log(newdata)
-          newdata.id= localcollections.length
-          console.log(newdata)
-          console.log("====================")
-          localcollections.push(newdata)
-          collections = localcollections
-        } else {
-          collections.push(newdata)
-        }
-        localStorage.setItem("collections", JSON.stringify(collections))
-        // console.log(JSON.stringify(newdata))
+    onSubmit() {
+      var collections = [];
+      var newdata = {
+        id: 0,
+        firstName: localStorage.getItem("firstName"),
+        lastName: localStorage.getItem("lastName"),
+        biodata: localStorage.getItem("biodata"),
+        provinsi: localStorage.getItem("provinsi"),
+        kota: localStorage.getItem("kota"),
+        kecamatan: localStorage.getItem("kecamatan"),
+        kelurahan: localStorage.getItem("kelurahan"),
+        url_selfie: localStorage.getItem("url_selfie"),
+        url_ktp: localStorage.getItem("url_ktp"),
+        url_bebas: localStorage.getItem("url_bebas"),
+      };
 
-        localStorage.removeItem("firstName")
-        localStorage.removeItem("lastName")
-        localStorage.removeItem("biodata")
-        localStorage.removeItem("provinsi")
-        localStorage.removeItem("kota")
-        localStorage.removeItem("kecamatan")
-        localStorage.removeItem("kelurahan")
-        localStorage.removeItem("url_selfie")
-        localStorage.removeItem("url_ktp")
-        localStorage.removeItem("url_bebas")
+      var localcollections = localStorage.getItem("collections")
+        ? JSON.parse(localStorage.getItem("collections"))
+        : null;
+      if (localcollections != null) {
+        newdata.id = localcollections.length;
+        localcollections.push(newdata);
+        collections = localcollections;
+      } else {
+        collections.push(newdata);
+      }
+      localStorage.setItem("collections", JSON.stringify(collections));
 
-        this.url_selfie = null
-        this.url_ktp = null
-        this.url_bebas = null
-    }
+      localStorage.removeItem("firstName");
+      localStorage.removeItem("lastName");
+      localStorage.removeItem("biodata");
+      localStorage.removeItem("provinsi");
+      localStorage.removeItem("kota");
+      localStorage.removeItem("kecamatan");
+      localStorage.removeItem("kelurahan");
+      localStorage.removeItem("url_selfie");
+      localStorage.removeItem("url_ktp");
+      localStorage.removeItem("url_bebas");
+
+      this.url_selfie = null;
+      this.url_ktp = null;
+      this.url_bebas = null;
+    },
   },
 };
 </script>

@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from "vue-router"
 
 const routes = [
     {
-        path: "/form-klaim",
+        path: "/",
         name: "formklaim",
         component: () => import("./views/FormKlaim")
     },

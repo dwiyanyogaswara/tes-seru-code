@@ -3,10 +3,10 @@
     <div class="container">
       <div class="row">
         <div
-          class="col-sm-1 bg-dark"
-          style="margin-left: -9%; width: 17%"
+          class="col-sm-1"
+          style="margin-left: -9%; width: 17%; background-color: #0043ff"
         ></div>
-        <div class="col-sm-10 bg-dark text-white">
+        <div class="col-sm-10 text-white" style="background-color: #0043ff">
           <div style="margin: 20px">
             <div class="row">
               <div class="col-2">
@@ -19,7 +19,7 @@
                     font-size: 40px;
                     font-weight: 600;
                     position: relative;
-                    /* top: -20px; */
+                    text-align: center;
                   "
                 >
                   Form Klaim
@@ -28,7 +28,7 @@
               <div class="col-2">
                 <router-link
                   :to="'/foto-klaim'"
-                  class="btn btn-outline-success"
+                  class="btn btn-success"
                   style="float: right"
                   ><font-awesome-icon icon="fa-solid fa-circle-arrow-right"
                 /></router-link>
@@ -36,7 +36,7 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <div class="progress">
+                <div class="progress" style="margin-top: 10px">
                   <div
                     class="
                       progress-bar progress-bar-striped progress-bar-animated
@@ -45,7 +45,7 @@
                     aria-valuenow="33"
                     aria-valuemin="0"
                     aria-valuemax="100"
-                    style="width: 33%"
+                    style="width: 33%; background-color: #d0a934"
                   ></div>
                 </div>
               </div>
@@ -53,15 +53,26 @@
           </div>
         </div>
         <div
-          class="col-sm-1 bg-dark"
-          style="margin-right: -9%; width: 17%"
+          class="col-sm-1"
+          style="margin-right: -9%; width: 17%; background-color: #0043ff"
         ></div>
       </div>
       <br />
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <div class="bg-dark text-white">
+          <div
+            style="
+              border: outset;
+              border-width: thick;
+              border-radius: 15px;
+              padding: 10px;
+              background-color: #0043ff;
+              color: #ffffff;
+              font-size: small;
+              font-weight: 600;
+            "
+          >
             <h3><center>Registrasi Klaim</center></h3>
           </div>
         </div>
@@ -71,71 +82,80 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-5">
-                  <label>No Polisi</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">B 56799 EFG</div>
+          <div
+            style="
+              border: outset;
+              border-width: thick;
+              border-radius: 15px;
+              padding: 10px;
+              background-color: #0043ff;
+              color: #ffffff;
+              font-size: small;
+              font-weight: 600;
+            "
+          >
+            <div class="row">
+              <div class="col-5">
+                <label>No Polisi</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>Nama Tertanggung</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">Fajar Pribadi</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">B 56799 EFG</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>Nama Tertanggung</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>No Polis</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">VCL 0909839849</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">Fajar Pribadi</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>No Polis</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>Periode</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">1 Juli 2018 - 1 Juli 2023</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">VCL 0909839849</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>Periode</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>Nilai Pertanggungan</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">Rp 50.000.000,-</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">1 Juli 2018 - 1 Juli 2023</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>Nilai Pertanggungan</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>Buatan/Merk</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">Jepang</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">Rp 50.000.000,-</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>Buatan/Merk</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>Tahun Pembuatan</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">2008</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">Jepang</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>Tahun Pembuatan</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>No. Mesin</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">MK76736473</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">2008</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>No. Mesin</label>
               </div>
-              <div class="row">
-                <div class="col-5">
-                  <label>No. Rangka</label>
-                </div>
-                <div class="col-1" style="text-align: right">:</div>
-                <div class="col-6">MCM87342834</div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">MK76736473</div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <label>No. Rangka</label>
               </div>
+              <div class="col-1" style="text-align: right">:</div>
+              <div class="col-6">MCM87342834</div>
             </div>
           </div>
         </div>
@@ -145,124 +165,134 @@
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-          <div class="card">
-            <div class="card-body">
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="firstName"
-                    placeholder="Enter firstname"
-                    v-model="firstName"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="lastName"
-                    placeholder="Enter lastname"
-                    v-model="lastName"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="comment">Biodata:</label>
-                  <textarea
-                    class="form-control"
-                    rows="3"
-                    id="biodata"
-                    name="text"
-                    v-model="biodata"
-                  ></textarea>
-                </div>
-                <div class="form-group">
-                  <label for="sel1" class="form-label">Provinsi:</label>
-                  <select
-                    class="form-select"
-                    id="provinsi"
-                    v-model="selected_provinsi"
+          <div
+            style="
+              border: outset;
+              border-width: thick;
+              border-radius: 15px;
+              padding: 10px;
+              background-color: #0043ff;
+              color: #ffffff;
+              font-size: small;
+              font-weight: 600;
+            "
+          >
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  v-model="firstName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  v-model="lastName"
+                />
+              </div>
+              <div class="form-group">
+                <label for="comment">Biodata:</label>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  id="biodata"
+                  name="text"
+                  v-model="biodata"
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <label for="sel1" class="form-label">Provinsi:</label>
+                <select
+                  class="form-select"
+                  id="provinsi"
+                  v-model="selected_provinsi"
+                >
+                  <option :value="null"></option>
+                  <option
+                    v-for="option in options_provinsi"
+                    :value="option.id + '-' + option.nama"
+                    :key="option.id"
                   >
-                    <option :value="null"></option>
-                    <option
-                      v-for="option in options_provinsi"
-                      :value="option.id + '-' + option.nama"
-                      :key="option.id"
-                    >
-                      {{ option.nama }}
-                    </option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="sel1" class="form-label">Kota:</label>
-                  <select
-                    v-bind:disabled="selected_provinsi == null"
-                    class="form-select"
-                    id="kota"
-                    v-model="selected_kota"
+                    {{ option.nama }}
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sel1" class="form-label">Kota:</label>
+                <select
+                  v-bind:disabled="selected_provinsi == null"
+                  class="form-select"
+                  id="kota"
+                  v-model="selected_kota"
+                >
+                  <option :value="null"></option>
+                  <option
+                    v-for="option in options_kota"
+                    :value="option.id + '-' + option.nama"
+                    :key="option.id"
                   >
-                    <option :value="null"></option>
-                    <option
-                      v-for="option in options_kota"
-                      :value="option.id + '-' + option.nama"
-                      :key="option.id"
-                    >
-                      {{ option.nama }}
-                    </option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="sel1" class="form-label">Kecamatan:</label>
-                  <select
-                    v-bind:disabled="selected_kota == null"
-                    class="form-select"
-                    id="kecamatan"
-                    v-model="selected_kecamatan"
+                    {{ option.nama }}
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sel1" class="form-label">Kecamatan:</label>
+                <select
+                  v-bind:disabled="selected_kota == null"
+                  class="form-select"
+                  id="kecamatan"
+                  v-model="selected_kecamatan"
+                >
+                  <option :value="null"></option>
+                  <option
+                    v-for="option in options_kecamatan"
+                    :value="option.id + '-' + option.nama"
+                    :key="option.id"
                   >
-                    <option :value="null"></option>
-                    <option
-                      v-for="option in options_kecamatan"
-                      :value="option.id + '-' + option.nama"
-                      :key="option.id"
-                    >
-                      {{ option.nama }}
-                    </option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="sel1" class="form-label">Kelurahan:</label>
-                  <select
-                    v-bind:disabled="selected_kecamatan == null"
-                    class="form-select"
-                    id="kelurahan"
-                    v-model="selected_kelurahan"
+                    {{ option.nama }}
+                  </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sel1" class="form-label">Kelurahan:</label>
+                <select
+                  v-bind:disabled="selected_kecamatan == null"
+                  class="form-select"
+                  id="kelurahan"
+                  v-model="selected_kelurahan"
+                >
+                  <option :value="null"></option>
+                  <option
+                    v-for="option in options_kelurahan"
+                    :value="option.id + '-' + option.nama"
+                    :key="option.id"
                   >
-                    <option :value="null"></option>
-                    <option
-                      v-for="option in options_kelurahan"
-                      :value="option.id + '-' + option.nama"
-                      :key="option.id"
-                    >
-                      {{ option.nama }}
-                    </option>
-                  </select>
-                </div>
-              </form>
-            </div>
+                    {{ option.nama }}
+                  </option>
+                </select>
+              </div>
+            </form>
           </div>
         </div>
         <div class="col-1"></div>
       </div>
+      <br />
       <div class="row">
         <div class="col-1"></div>
-        <div class="col-10"></div>
-        <div class="col-1"></div>
-      </div>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10"></div>
+        <div class="col-10">
+          <router-link
+            :to="'/foto-klaim'"
+            class="btn btn-success"
+            style="float: right"
+            ><font-awesome-icon icon="fa-solid fa-circle-arrow-right"
+          /></router-link>
+        </div>
         <div class="col-1"></div>
       </div>
     </div>
@@ -385,5 +415,8 @@ export default {
 <style>
 body {
   background-color: #e4ecff;
+}
+.form-select:disabled {
+  background-color: #9e9e9e;
 }
 </style>

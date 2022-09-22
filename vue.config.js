@@ -3,7 +3,5 @@
 //   transpileDependencies: true
 // })
 module.exports = {
-  devServer: {
-    proxy: 'http://bibekshakya.com/'
-  }
+  publicPath: process.env.NODE_ENV === "production" ? "/tes-seru-demo/" : "/",
 }
