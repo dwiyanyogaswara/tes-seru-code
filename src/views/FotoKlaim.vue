@@ -309,32 +309,47 @@ export default {
         url_bebas: localStorage.getItem("url_bebas"),
       };
 
-      var localcollections = localStorage.getItem("collections")
-        ? JSON.parse(localStorage.getItem("collections"))
-        : null;
-      if (localcollections != null) {
-        newdata.id = localcollections.length;
-        localcollections.push(newdata);
-        collections = localcollections;
+      var need_review = ''
+      Object.keys(newdata).forEach(function(key){
+        if(newdata[key] == null){
+          key = key.replace('firstName', 'first name ')
+          key = key.replace('lastName', 'last name ')
+          key = key.replace('url_', 'foto ')
+          need_review += key + ", " 
+        }
+      })
+      if (need_review != '') {
+        alert(need_review + " masih kosong, mohon diisi dulu!");
       } else {
-        collections.push(newdata);
+        var localcollections = localStorage.getItem("collections")
+          ? JSON.parse(localStorage.getItem("collections"))
+          : null;
+        if (localcollections != null) {
+          newdata.id = localcollections.length;
+          localcollections.push(newdata);
+          collections = localcollections;
+        } else {
+          collections.push(newdata);
+        }
+        localStorage.setItem("collections", JSON.stringify(collections));
+
+        localStorage.removeItem("firstName");
+        localStorage.removeItem("lastName");
+        localStorage.removeItem("biodata");
+        localStorage.removeItem("provinsi");
+        localStorage.removeItem("kota");
+        localStorage.removeItem("kecamatan");
+        localStorage.removeItem("kelurahan");
+        localStorage.removeItem("url_selfie");
+        localStorage.removeItem("url_ktp");
+        localStorage.removeItem("url_bebas");
+
+        this.url_selfie = null;
+        this.url_ktp = null;
+        this.url_bebas = null;
+
+        alert("Submit data success!");
       }
-      localStorage.setItem("collections", JSON.stringify(collections));
-
-      localStorage.removeItem("firstName");
-      localStorage.removeItem("lastName");
-      localStorage.removeItem("biodata");
-      localStorage.removeItem("provinsi");
-      localStorage.removeItem("kota");
-      localStorage.removeItem("kecamatan");
-      localStorage.removeItem("kelurahan");
-      localStorage.removeItem("url_selfie");
-      localStorage.removeItem("url_ktp");
-      localStorage.removeItem("url_bebas");
-
-      this.url_selfie = null;
-      this.url_ktp = null;
-      this.url_bebas = null;
     },
   },
 };
